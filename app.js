@@ -17,6 +17,8 @@ async function downFile () {
     await download(url, './')
 }
 
+
+
 async function changeFiele () {
    let content = await fs.readFileSync('./JD_DailyBonus.js', 'utf8')
    content = content.replace(/var Key = ''/, `var Key = '${KEY}'`)
